@@ -1,0 +1,26 @@
+name: Compilation LaTeX
+on:
+  push:
+    branches: [ "main" ]
+jobs:
+  build_latex:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Set up Git repository
+        uses: actions/checkout@v3
+      - name: Compile LaTeX document
+        uses: xu-cheng/latex-action@v2
+        with:
+          root_file: math-ulm-2023.tex
+          compiler: latexmk
+          args: -pdf -file-line-error -halt-on-error -interaction=nonstopmode -bibtex
+      - name: Upload PDF file
+        run: |
+          # see https://docs.gitlab.com/ee/ci/ssh_keys/
+          eval $(ssh-agent -s)
+          echo "${{ secrets.SSH_PRIVATE_KEY }}" | ssh-add -
+          mkdir -p ~/.ssh
+          chmod 700 ~/.ssh
+          echo "${{ secrets.SSH_KNOWN_HOSTS }}" >> ~/.ssh/known_hosts
+          chmod 644 ~/.ssh/known_hosts
+          scp math-ulm-2023.pdf ${{ secrets.SSH_DEPLOY_PATH }}
