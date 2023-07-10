@@ -1,0 +1,19 @@
+\section{Une inégalité isopérimétrique discrète}
+
+Soient~$n$ et~$d$ des entiers strictement positifs et~$G = \left( \mathbb{Z}/n \mathbb{Z} \right)^d$.
+Soit~$S = \left\{ \pm e_1,\dotsc,\pm e_d \right\}$, où~$e_i = (0,\dotsc,0,1,0,\dotsc,0) \in G$, avec le~1 en~$i$\textsuperscript{e} position.
+Soient~$X$ une variable aléatoire uniformément distribuée dans~$G$ et~$f : G\to \mathbb{R}$ une fonction.
+Montrer que
+\[ \mathbb{E} \left[ \left| f(X) - \mathbb{E}[f(X)] \right| \right] \leq \frac{dn}{2} \max_{s\in S} \mathbb{E} \left[ |f(X) - f(X + s)| \right]. \]
+
+Soit~$X$ l'ensemble des sommets de l'hypercube~$[0,1]^d$.
+Soit~$A \subset X$ un sous-ensemble strict non vide.
+Soit~$n_A$ le nombre d'arrêtes de~$X$ ayant une et une seule extrémité dans~$A$.
+Donner un majorant de
+\[ \frac{\operatorname{card}(A) \operatorname{card}(X\setminus A)}{n_A}. \]
+
+
+%%% Local Variables:
+%%% mode: latex
+%%% TeX-master: "main"
+%%% End:

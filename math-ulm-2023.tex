@@ -1,0 +1,72 @@
+\documentclass[a4paper,parskip=half-,headings=small]{scrartcl}
+
+\usepackage{libertine}
+\usepackage[T1]{fontenc}
+\usepackage[libertine,vvarbb]{newtxmath}
+\usepackage{microtype}
+\usepackage[hypertexnames=false]{hyperref}
+\usepackage[french]{babel}
+\usepackage[scale=.85]{plex-sans}
+
+\usepackage{mathtools}
+\usepackage[shortlabels]{enumitem}
+
+\usepackage[type={CC}, modifier={zero}, imagemodifier={-80x15}, version={1.0}, imageposition=left]{doclicense}
+
+\usepackage[style=apa, backend=biber]{biblatex}
+\addbibresource[glob]{*.bib}
+
+\addtokomafont{author}{\sffamily}
+\addtokomafont{date}{\sffamily}
+
+\title{Épreuve orale “Mathématiques Ulm”}
+\subtitle{Concours MP --- Session 2023}
+\date{}
+
+\renewcommand{\leq}{\leqslant}
+\renewcommand{\geq}{\geqslant}
+\renewcommand{\epsilon}{\varepsilon}
+\renewcommand{\phi}{\varphi}
+
+\newcommand{\st}{\ \middle|\ }
+
+\begin{document}
+
+\maketitle
+\begin{center}
+  \begin{minipage}{.7\linewidth}
+    \footnotesize\sffamily \doclicenseThis
+  \end{minipage}
+\end{center}
+
+\input{00_tchebychev_wronskien.tex}
+\input{01_divis_card_GLnFp.tex}
+\input{02_monomisation_locale.tex}
+\input{03_espace_translatee.tex}
+\input{04_somme_alternee.tex}
+\input{05_union_de_fermes.tex}
+\input{06_isoperimetrique_discrete.tex}
+\input{07_antisymetrique.tex}
+\input{08_isometries_affines.tex}
+\input{10_resultant.tex}
+\input{11_composantes_connexes.tex}
+\input{12_translation_impossible.tex}
+\input{13_valuation_padique_produit.tex}
+\input{14_generateur_groupe_matriciel.tex}
+\input{15_angle_pavage.tex}
+\input{16_cosinus_rationnel.tex}
+\input{17_wronskien_peano.tex}
+\input{18_distance_mat_sym.tex}
+\input{19_norme_inverse.tex}
+\input{20_disques_carres.tex}
+\input{21_certification_racine.tex}
+\input{21_mediane_moyenne.tex}
+\input{22_sous_espace_stable.tex}
+\input{23_hermite_kakeya.tex}
+\input{24_groupe_de_polynomes.tex}
+\input{25_somme_deux_carres.tex}
+\input{26_hermite_sylvester.tex}
+
+\printbibliography
+
+\end{document}

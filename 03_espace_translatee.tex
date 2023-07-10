@@ -1,0 +1,21 @@
+\section{Espace des translatées d'une fonction}
+\label{sec:espace-des-transl}
+
+
+Soit~$g \in \mathcal{C}(\mathbb{R})$ une fonction intégrable.
+Pour~$A\subseteq \mathbb{Z}$, on note $\mathcal{S}_A$ le sous-espace vectoriel de~$\mathcal{C}(\mathbb{R})$ engendré par les fonctions $x\mapsto g(x-a)$, avec~$a\in A$.
+On suppose que pour toute $f \in \mathcal{C}(\mathbb{R})$ intégrable et tout $\epsilon > 0$, il existe $h \in \mathcal{S}_\mathbb{Z}$ telle que
+\[ \int_\mathbb{R} |f(x)-h(x)| \mathrm{d}x<\epsilon. \]
+
+Montrer que pour toute $f\in \mathcal{C}(\mathbb{R})$ intégrable et tout $\epsilon >0$, il existe $L>0$ tel que
+pour tout $y \in \mathbb{R}$, il existe~$A \subset \mathbb{Z}$ et~$h\in \mathcal{S}_A$ tels que
+\[ \# A \leq L \text{ et } \int_\mathbb{R} |f(x-y)-h(x)|\mathrm{d} x< \epsilon. \]
+
+\begin{em}
+  L'énoncé est correct, mais l'hypothèse est vide, nous avons abusivement simplifié un vrai énoncé en replaçant une famille de fonctions par une seule. Il y a donc deux méthodes assez différentes pour résoudre l'exercice: montrer l'implication, ou bien montrer que l'hypothèse est vide.
+\end{em}
+
+%%% Local Variables:
+%%% mode: latex
+%%% TeX-master: "main"
+%%% End:

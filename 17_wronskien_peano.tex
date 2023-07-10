@@ -1,0 +1,36 @@
+\section{Théorème de Peano}
+
+Soit~$I \subseteq \mathbb{R}$ un intervalle ouvert non vide.
+Soit~$\mathcal{C}^r(I)$ le~$\mathbb{R}$-espace vectoriel des fonctions sur~$I$
+à valeurs réelles continument dérivables~$r$ fois. Pour toutes fonctions
+$f_1,\dotsc,f_r \in \mathcal{C}^r(I)$
+on définit une fonction~$I\to \mathbb{R}$
+\[ \mathcal{W}[f_1,\dotsc,f_r](x) = \left|
+    \begin{matrix}
+      f_1 & \dotsb & f_r \\
+      f_1' & \dotsb & f_r' \\
+      \vdots & & \vdots \\
+      f_1^{(r-1)} & \dotsb & f_r^{(r-1)}
+    \end{matrix}
+  \right|. \]
+
+Soient~$f_1,\dotsc,f_r \in \mathcal{C}^r(I)$.
+On note $W = \mathcal{W}[f_1,\dotsc,f_n]$
+et, pour~$1\leq i\leq r$,
+\[ V_i = (-1)^i \mathcal{W}[f_1,\dotsc,f_{i-1},f_{i+1},\dotsc,f_r]. \]
+Montrer que si~$V_r$ ne s'annule pas sur~$I$ et si~$W \equiv 0$, alors les $f_1,\dotsc,f_r$ forment une famille liée.
+
+On essaie ensuite de donner une démonstration directe, sans utiliser le théorème de Cauchy.
+On pourra montrer que si~$W \equiv 0$, alors pour tout~$0\leq k< r$,
+\[ \sum_{i=1}^r V_i(x) f_i^{(k)}(x) = 0 \quad\text{et}\quad  \sum_{i=1}^r V_i'(x) f_i^{(k)}(x) = 0. \]
+
+
+\begin{em}
+  C'est un théorème dû à \textcite{Peano_1889} mais, pour la dernière partie de l'énoncé, nous suivons la démonstration de \textcite{Bocher_1900}.
+\end{em}
+
+
+%%% Local Variables:
+%%% mode: latex
+%%% TeX-master: "main"
+%%% End:

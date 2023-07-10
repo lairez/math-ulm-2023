@@ -1,0 +1,27 @@
+\section{Minimisation locale sur un graphe}
+
+Soit~$E$ un ensemble fini et~$V : E \to \mathcal{P}(E)$ une fonction de~$E$ vers les parties de~$E$.
+Soit~$f : E \to \mathbb{R}$ une fonction.
+Un point~$a \in E$ est un \emph{minimum local} si
+$f(a) \leq f(b)$ pour tout~$b \in V(a)$.
+
+Soit~$M$ un entier tel que~$M \geq \sqrt{\# E}$. Soient~$b_1,\dotsc,b_M$ des variables aléatoires indépendantes et uniformément distribuées dans~$E$.
+Soit~$k$ tel que $f(b_k) = \min_{1\leq i \leq M} f(b_i)$.
+
+Soit~$(u_n)_{n\geq 0}$ une suite de~$E$ telle que~$u_0 = b_k$
+et pour tout~$n \geq 0$:
+\begin{itemize}
+  \item si $u_n$ est un minimum local, alors~$u_{n+1} = u_n$;
+  \item sinon, $u_{n+1} \in V(u_n)$ et~$f(u_{n+1}) < f(u_n)$.
+\end{itemize}
+
+Montrer que $u_{M}$ est un minimum local avec probabilité au moins~$1/2$.
+
+\begin{em}
+  Inspiré par \textcite{Aldous_1983}, même s'il considère cet énoncé précis comme trivial.
+\end{em}
+
+%%% Local Variables:
+%%% mode: latex
+%%% TeX-master: "main"
+%%% End:

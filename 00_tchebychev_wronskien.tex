@@ -1,0 +1,34 @@
+\section{Wronskiens et systèmes de Tchebychev}
+
+Soit~$I \subseteq \mathbb{R}$ un intervalle ouvert non vide.
+Soit~$\mathcal{C}^r(I)$ le~$\mathbb{R}$-espace vectoriel des fonctions sur~$I$
+à valeurs réelles continument dérivables $r$ fois. Pour toutes fonctions
+$f_1,\dotsc,f_r \in \mathcal{C}^{r-1}(I)$
+on définit une fonction~$I\to \mathbb{R}$
+\[ \mathcal{W}[f_1,\dotsc,f_r](x) = \left|
+    \begin{matrix}
+      f_1 & \dotsb & f_r \\
+      f_1' & \dotsb & f_r' \\
+      \vdots & & \vdots \\
+      f_1^{(r-1)} & \dotsb & f_r^{(r-1)}
+    \end{matrix}
+  \right|. \]
+
+\begin{enumerate}
+  \item Montrer que pour toute fonctions~$g,f_1,\dotsc,f_r \in C^{r-1}(I)$,
+        \[ \mathcal{W}[gf_1,\dotsc,g f_r](x) = g(x)^r \mathcal{W}[f_1,\dotsc,f_r](x). \]
+
+
+  \item Soit~$f_1,\dotsc,f_r \in C^{r-1}(I)$ telles que~$\mathcal{W}[f_1,\dotsc,f_k]$ est strictement positif sur~$I$, pour tout~$1\leq k\leq r$.
+        Montrer que pour tout~$a_1,\dotsc,a_r \in \mathbb{R}$ non tous nuls, la fonction~$a_1 f_1 + \dotsb + a_r f_r$ admet au plus~$r-1$ zéros sur~$I$.
+\end{enumerate}
+
+\begin{em}
+  Pour la seconde question, le cas $r=2$ est instructif.
+  C'est un théorème classique qui admet aussi une réciproque \parencite[Chap.~XI, Théorème~1.2]{KarlinStudden_1966}
+\end{em}
+
+%%% Local Variables:
+%%% mode: latex
+%%% TeX-master: "main"
+%%% End:
