@@ -12,6 +12,6 @@ Les contributions de toute la communauté CPGE sont les bienvenues pour la réda
 
 ## Licence
 
-![https://licensebuttons.net/p/zero/1.0/80x15.png]
+![CC0 logo](https://licensebuttons.net/p/zero/1.0/80x15.png)
 
 Ce travail est publié sous license [CC0](http://creativecommons.org/publicdomain/zero/1.0)
