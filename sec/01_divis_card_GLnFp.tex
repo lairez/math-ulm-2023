@@ -13,21 +13,6 @@ dans~$\mathbb{Z}/p\mathbb{Z}$.
   On pouvait aussi s'en passer (voir la solution algébrique).
 \end{em}
 
-\subsection*{Solution arithmétique}
-
-On sait que le cardinal de $\operatorname{GL}_{n-1}(\mathbb{Z}/p \mathbb{Z})$ est égal à
-\[ N = p^{\frac{n (n-1)}{2}} \prod_{i=1}^{n-1}  (p^i  -1). \]
-Par le théorème d'Euler, $n$ divise~$p^{\phi(n)} - 1$, où~$\phi(n)$ est l'indicatrice d'Euler.
-Comme~$\phi(n) \leq n-1$, $p^{\phi(n)} - 1$ divise~$N$, donc $n$ divise aussi~$N$.
-
-\subsection*{Solution algébrique}
-
-Par le théorème de Lagrange, il suffit de trouver un élément d'ordre~$n$ dans~$\operatorname{GL}_{n-1}(\mathbb{Z}/p\mathbb{Z})$.
-On peut prendre~$M_P$, la matrice compagnon du polynôme~$P = 1+X+X^2+ \dotsb + X^{n-1}$.
-Le polynôme caractéristique de cette matrice est~$P$ lui-même. Ce polynôme divise~$X^n-1$, donc~$M_P^n = I$.
-Comme~$M_P^k \cdot e_1 = e_{k+1}$, pour~$1\leq k\leq n-1$, la matrice n'est pas d'ordre strictement inférieur à~$n$.
-Donc elle est d'ordre~$n$.
-
 %%% Local Variables:
 %%% mode: latex
 %%% TeX-master: "main"

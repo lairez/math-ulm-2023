@@ -11,17 +11,11 @@
 \usepackage{mathtools}
 \usepackage[shortlabels]{enumitem}
 
-\usepackage[type={CC}, modifier={zero}, imagemodifier={-80x15}, version={1.0}, imageposition=left]{doclicense}
-
 \usepackage[style=apa, backend=biber]{biblatex}
 \addbibresource[glob]{*.bib}
 
 \addtokomafont{author}{\sffamily}
 \addtokomafont{date}{\sffamily}
-
-\title{Épreuve orale “Mathématiques Ulm”}
-\subtitle{Concours MP --- Session 2023}
-\date{}
 
 \renewcommand{\leq}{\leqslant}
 \renewcommand{\geq}{\geqslant}
@@ -30,12 +24,28 @@
 
 \newcommand{\st}{\ \middle|\ }
 
+\usepackage{fontawesome}
+\usepackage{graphicx}
+
+\title{Épreuve orale “Mathématiques Ulm”}
+\subtitle{Concours MP --- Session 2023}
+\author{Pierre Lairez \and Romain Tessera}
+\date{}
+
 \begin{document}
 
 \maketitle
 \begin{center}
   \begin{minipage}{.7\linewidth}
-    \footnotesize\sffamily \doclicenseThis
+    \footnotesize\sffamily
+    Ce document rassemble les exercices posés aux candidats au concours d'entrée de l'ENS Ulm, en filière MP, lors de l'épreuve orale “Mathématiques Ulm”.
+    \bigskip
+
+    \faGithub{} \url{https://github.com/lairez/math-ulm-2023}
+
+    \bigskip
+    \raisebox{-.4ex}{\includegraphics[height=2ex]{cc-zero.pdf}}
+    Document publié sous licence \href{https://creativecommons.org/publicdomain/zero/1.0/deed.fr}{``CC0 1.0 Universel''}.
   \end{minipage}
 \end{center}
 
